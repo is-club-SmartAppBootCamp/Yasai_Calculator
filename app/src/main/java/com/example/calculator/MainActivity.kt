@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
     fun tapCalculationButton(view: View){
         val num1 = findViewById<EditText>(R.id.Num1).text.toString()
         val num2 = findViewById<EditText>(R.id.Num2).text.toString()
-        val operator_name = findViewById<Spinner>(R.id.spinner).selectedItem.toString()
-        val result = Calculator().execCalculation(num1, num2, operator_name)
-        textView.text = num1 + operator_name + num2 + "=" + result.toString()
+        val operatorName = findViewById<Spinner>(R.id.spinner).selectedItem.toString()
+        val result = Calculator().execCalculation(num1, num2, operatorName)
+        textView.text = num1 + operatorName + num2 + "=" + result.toString()
     }
 
 }
